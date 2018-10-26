@@ -21,7 +21,7 @@ var fs = require('fs');
 
 client.on('ready', function(){ // Leaked by [ @Fr3on Gamer#9338 ]
     var ms = 30000 ;
-    var setGame = [`King Community `,` King Bot By Fr3on Gamer#9338 !`];
+    var setGame = [`UnderWorld `,` $help `];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -107,7 +107,7 @@ client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "King Bot"
+                  text: "Under Bot"
                 }
               }
             });
@@ -337,7 +337,7 @@ var message = "zg";
      .setTitle('King Bot Link Click Here .!')
      .setURL('https://discordapp.com/api/oauth2/authorize?client_id=498254846819041287&permissions=8&scope=bot')
   .setDescription(`**
-  New Server Add King Bot ✅
+  New Server Add Under Bot ✅
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("465340887279468564").sendEmbed(embed)
@@ -350,7 +350,7 @@ var message = "zg";
      .setTitle('King Bot Link Click Here .!')
      .setURL('https://discordapp.com/api/oauth2/authorize?client_id=498254846819041287&permissions=8&scope=bot')
   .setDescription(`**
-  Server Kicked King Bot :cry:
+  Server Kicked Under Bot :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("465340887279468564").sendEmbed(embed)
@@ -413,7 +413,7 @@ var mentionned = message.mentions.members.first();
 .addField(': دخولك لديسكورد قبل', `${moment(heg.createdTimestamp).format('YYYY/M/D HH:mm:ss')} **\n** \`${moment(heg.createdTimestamp).fromNow()}\`` ,true)
 .addField(': انضمامك لسيرفر قبل', `${moment(h.joinedAt).format('YYYY/M/D HH:mm:ss')} \n \`${moment(h.joinedAt).fromNow()}\``, true)
 .addField(': عدد الدعوات', inviteCount,false)
-.setFooter("King Bot.")
+.setFooter("Under Bot.")
     message.channel.sendEmbed(id);
 })
 }
