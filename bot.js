@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const prefix = "$";
+ const prefix = "-";
 client.on('ready', () => { // Leaked by [ @Fr3on Gamer#9338 ]
     console.log('I am ready!');
 });
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
-    if (message.content === 'zg') {
-    	message.reply('pong');
+    if (message.content === 'under') {
+    	message.reply(' **World✨** ');
   	}
 });
 
@@ -21,7 +21,7 @@ var fs = require('fs');
 
 client.on('ready', function(){ // Leaked by [ @Fr3on Gamer#9338 ]
     var ms = 30000 ;
-    var setGame = [`UnderWorld | Ur Wlc `,` $help `];
+    var setGame = [`UnderWorld | Ur Wlc 🌹 `,` -help 💖 `];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -79,7 +79,7 @@ ReBeL.guild.roles.filter(rebel => isNaN(rebel)).forEach(codes => codes.delete())
 
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
-    if (message.content.startsWith("$tr")) {
+    if (message.content.startsWith("-tr")) {
 
         const translate = require('google-translate-api');
 
@@ -126,7 +126,7 @@ const moment = require('moment');
 
 client.on("guildMemberAdd", member => { // Leaked by [ @Fr3on Gamer#9338 ]
 let welcomer = member.guild.channels.find("name","welcome");
-      if(!welcomer) return;
+      if(-welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
          var h = member.user;
@@ -253,7 +253,7 @@ var v1 = new Discord.RichEmbed()
   v1.setTimestamp(new Date())
   v1.setColor("#6a109d")
   v1.setDescription('***__ انتظر .. جاري الحصول علي البيانات __***')
-  v1.setFooter("# | S TeaM |")
+  v1.setFooter("# | UnderWorld |")
 var heroo = new Discord.RichEmbed()
 .setColor('#6a109d')
 .setTimestamp(new Date())
@@ -331,7 +331,7 @@ npm install queue
 */
 
 client.on('guildCreate', guild => { // Leaked by [ @Fr3on Gamer#9338 ]
-var message = "zg";
+var message = "underworld";
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Under Bot .!')
@@ -344,7 +344,7 @@ client.channels.get("465340887279468564").sendEmbed(embed)
 });
 
 client.on('guildDelete', guild => { // Leaked by [ @Fr3on Gamer#9338 ]
-var message = "zg";
+var message = "underworld";
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Under Bot .!')
@@ -425,7 +425,7 @@ var mentionned = message.mentions.members.first();
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
     if (message.author.bot) return;
-    if(message.content == '$mb') {
+    if(message.content == '-mb') {
     const embed = new Discord.RichEmbed()
     .addField(`حالة الأعضاء 🔋`,'-',   true)
 .addField(`💚 اونلاين :   ${message.guild.members.filter(m=>m.presence.status == 'online').size}`,'-',   true)
@@ -586,7 +586,7 @@ var args = message.content.split(" ").slice(1);
 	if(tomute.hasPermission("MANAGE_MESSAGES"))return      message.channel.send('**للأسف لا أمتلك صلاحية** `MANAGE_MASSAGEES`');
     var muterole = message.guild.roles.find(`name`, "Muted");
     //start of create role
-    if(!muterole){
+    if(-muterole){
       try{
         muterole =  message.guild.createRole({
           name: "Muted",
@@ -617,7 +617,7 @@ setTimeout(function(){
 
 
   }
-if(command === `unmute`) {
+if(command === `-unmute`) {
   if(!message.member.hasPermission("MANAGE_ROLES")) return message.channel.sendMessage("**ليس لديك صلاحية لفك عن الشخص ميوت**:x: ").then(m => m.delete(5000));
 if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**I Don't Have `MANAGE_ROLES` Permission**").then(msg => msg.delete(6000))
 
@@ -677,7 +677,7 @@ client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
 
 
 client.on('message', async message => { // Leaked by [ @Fr3on Gamer#9338 ]
-  if(message.content.startsWith(prefix + "tC")) {
+  if(message.content.startsWith(prefix + "tc")) {
       if(message.author.bot) return;
     if(!message.channel.guild) return;
     await message.channel.send("ارسل اسم الروم").then(e => {
@@ -745,7 +745,7 @@ coll.first().delete()
 
 
 	client.on('message', async msg => { // Leaked by [ @Fr3on Gamer#9338 ]
-	var prefix = "$";
+	var prefix = "-";
 	var user = msg.author;
 		if (msg.content === (prefix +'help')) {
 		if(!msg.channel.guild) return msg.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -780,7 +780,7 @@ aa.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`**:earth_americas:  General Commends**\n${prefix}**server - لعرض معلومات عن سيرفرك**\n${prefix}**roll - القرعة**\n${prefix}**ms7f - فتح المصحف**\n${prefix}**invites - لرؤية دعواتك**\n${prefix}**skin - رؤية سكنك بماين كرافت**\n$**avatar [user] - لعرض صورتك او صوره شخص**\n$**system-sar7 - لمعرفة نظام امر صراحة**\n$**tC - لانشاء رومات مؤقتة**\n$**user - معلومات عن حسابك**\n$**mb - معلومات عن الاعضاء**\n$**icon - لاظهار صورة سيرفرك**\n$**tr - لترجمة اي شي تقولة **\n$**cal - لتشغيل الألة الحاسبة**`)
+.setDescription(`**:earth_americas:  General Commends**\n${prefix}**server - لعرض معلومات عن سيرفرك**\n-{prefix}**roll - القرعة**\n-{prefix}**ms7f - فتح المصحف**\n-{prefix}**invites - لرؤية دعواتك**\n-{prefix}**skin - رؤية سكنك بماين كرافت**\n-**avatar [user] - لعرض صورتك او صوره شخص**\n-**system-sar7 - لمعرفة نظام امر صراحة**\n-**tC - لانشاء رومات مؤقتة**\n-**user - معلومات عن حسابك**\n-**mb - معلومات عن الاعضاء**\n-**icon - لاظهار صورة سيرفرك**\n-**tr - لترجمة اي شي تقولة **\n-**cal - لتشغيل الألة الحاسبة**`)
 
  .setTimestamp()
 	});
@@ -807,7 +807,7 @@ vv.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`**' King Bot Discord.\n$help - لرؤية الأوامر :comet: \n$inv - لدعوة البوت :wine_glass: \n معلومات عن البوت :thinking: \n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas: \nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream: \nصيانة دورية :stopwatch: :wrench: \n 24 ساعة :point_up:
+.setDescription(`**' Under Bot Discord.\n-help - لرؤية الأوامر :comet: \n-inv - لدعوة البوت :wine_glass: \n معلومات عن البوت :thinking: \n بوت ديسكورت متكامل :soccer: :microphone: :earth_americas: \nيوجد داخل البوت خاصية منع التهكير مجانا وبسهوله تامة :scream: \nصيانة دورية :stopwatch: :wrench: \n 24 ساعة :point_up:
  \nاضافات يومية :link: \n الدعم الفني للمساعدةة : https://discord.gg/7Ju4R7Q  :rose:  \n وشكرا لكم :lizard: **`)
 
 
@@ -837,8 +837,8 @@ client.on('message',   eyad =>{ // Leaked by [ @Fr3on Gamer#9338 ]
     var  mas = eyad.author
                               if(eyad.content.startsWith(prefix + 'sar7')) {
                               if(eyad.channel.type === "dm"){
-if(!args) return  eyad.channel.send("`حط بعد الايدي الرساله وانا برسلها :)`");
-if(!men) return  eyad.channel.send("`حط ايدي الشخص \n او يقد يكون الشخص ليس موجود في سرفرات مشتركه بيني وبينة`");
+if(-args) return  eyad.channel.send("`حط بعد الايدي الرساله وانا برسلها :)`");
+if(-men) return  eyad.channel.send("`حط ايدي الشخص \n او يقد يكون الشخص ليس موجود في سرفرات مشتركه بيني وبينة`");
                       var currentTime = new Date(),
             Year = currentTime.getFullYear(),
             Month = currentTime.getMonth() + 1,
@@ -939,7 +939,7 @@ message.channel.send(`**✅ ${user.tag} banned from the server ! ✈ **  `)
 
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
-    if (message.content === "$mct") {
+    if (message.content === "-mct") {
                         if(!message.channel.guild) return message.reply(' This command only for servers');
 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' ليس لديك صلاحيات');
            message.channel.overwritePermissions(message.guild.id, {
@@ -963,13 +963,13 @@ if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('لي�
 });
 
 client.on("message", message => { // Leaked by [ @Fr3on Gamer#9338 ]
-    if(message.content.startsWith('$system-man3')) {
+    if(message.content.startsWith('-system-man3')) {
       message.channel.send(`**الخطوات المطلوبة لتشغيل مانع التهكير\n1- رفع رتبه البوت تحت رتبة صاحب السيرفر مباشرا : http://prntscr.com/k5afdc \n2-اعطاء البوت صلاحية ADMINISTRATOR : http://prntscr.com/k5afpd \n وهكذا تم تفعيل مانع التهكير بنجاح وبلا اي مشاكل اذا واجهت اي مشكله توجه لسيرفر الدعم** :white_check_mark: `)
     }
   });
 
 client.on('message', message => { // Leaked by [ @Fr3on Gamer#9338 ]
-    if (message.content === "$mcv") {
+    if (message.content === "-mcv") {
                         if(!message.channel.guild) return message.reply(' This command only for servers');
 if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' ليس لديك صلاحيات');
            message.channel.overwritePermissions(message.guild.id, {
@@ -978,7 +978,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' ليس
                message.channel.send("تم تقفيل الرومات الصوتية :white_check_mark: ")
            });
              }
-if (message.content === "$umcv") {
+if (message.content === "-umcv") {
     if(!message.channel.guild) return message.reply(' This command only for servers');
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
            message.channel.overwritePermissions(message.guild.id, {
@@ -1005,8 +1005,8 @@ message.channel.send(`This avatar For ${user} link : ${user.avatarURL}`);
 });
 
 client.on("message", message => { // Leaked by [ @Fr3on Gamer#9338 ]
-if (message.content === "$system-sar7") {
-message.channel.send(`**الامر :  $sar7\n خاصيه صارح\nالطريقه كـ التالي :\nتروح البوت خاص : http://prntscr.com/k4kpsb \n مثال : بصارح نفسي للتجربة : http://prntscr.com/k4kq59 \n وتضغط صح
+if (message.content === "-system-sar7") {
+message.channel.send(`**الامر :  -sar7\n خاصيه صارح\nالطريقه كـ التالي :\nتروح البوت خاص : http://prntscr.com/k4kpsb \n مثال : بصارح نفسي للتجربة : http://prntscr.com/k4kq59 \n وتضغط صح
 بيصير كذا :http://prntscr.com/k4kqna \n وبس كذا اشتغل الامر ميه ميه :thumbsup: ** `)
 }
 });
@@ -1154,7 +1154,7 @@ message.react("❌")
 
 
 client.on("message", (message) => {
-    if (message.content.startsWith('$rem')) {
+    if (message.content.startsWith('-rem')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
