@@ -794,7 +794,7 @@ mm.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`** :wrench: Admins Commends** \n-**system-man3 - لمعرفة كيفيه تفعيل نظام منع التهكير لسيرفرك**\n-{prefix}**mute - لعمل ميوت للعضو**\n-{prefix}**unmute لفك الميوت عن  العضو**\n-{prefix}**bc - الرساله الجماعيه**\n-{prefix}**ban - أمر الباند**\n**-kick - أمر الكيك**\n-{prefix}**cc [number] - لصنع رتب الوان باختيار عدد**\n-{prefix}**dc - لحذف جميع رتب الالوان فقط**\n**-clear - لمسح الشات**\n-**role [mention] [rolename] - لاعطاء شخص رتبة**\n-**rerole [user] [rolename] - لازالة رتبة من شخص**\n-**move [user] - لنقل شخص من روم صوتي لرومك**\n-**move all - لنقل جميع المتواجدين بـ الرومات لرومك**\n-**mct - لقفل جميع الرومات الكتابية**\n-**umct - لفتح جميع الرومات الكتابية**\n-**mcv - لقفل جميع الرومات الصوتية**\n-**umcv - لفتح جميع الرومات الصوتية**`)
+.setDescription(`** :wrench: Admins Commends** \n-**system-man3 - لمعرفة كيفيه تفعيل نظام منع التهكير لسيرفرك**\n-**mute - لعمل ميوت للعضو**\n-**unmute لفك الميوت عن  العضو**\n-**bc - الرساله الجماعيه**\n-**ban - أمر الباند**\n**-kick - أمر الكيك**\n-**cc [number] - لصنع رتب الوان باختيار عدد**\n-**dc - لحذف جميع رتب الالوان فقط**\n**-clear - لمسح الشات**\n-**role [mention] [rolename] - لاعطاء شخص رتبة**\n-**rerole [user] [rolename] - لازالة رتبة من شخص**\n-**move [user] - لنقل شخص من روم صوتي لرومك**\n-**move all - لنقل جميع المتواجدين بـ الرومات لرومك**\n-**mct - لقفل جميع الرومات الكتابية**\n-**umct - لفتح جميع الرومات الكتابية**\n-**mcv - لقفل جميع الرومات الصوتية**\n-**umcv - لفتح جميع الرومات الصوتية**`)
 
 .setTimestamp()
 	});
