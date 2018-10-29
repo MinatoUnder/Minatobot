@@ -626,7 +626,7 @@ if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return mess
 
   var role = message.guild.roles.find (r => r.name === "Muted");
 
-  if(!role || !toMute.roles.has(role.id)) return message.channel.sendMessage("**لم يتم اعطاء هذه شخص ميوت من الأساس**:x:")
+  if(-role || !toMute.roles.has(role.id)) return message.channel.sendMessage("**لم يتم اعطاء هذه شخص ميوت من الأساس**:x:")
 
   toMute.removeRole(role)
   message.channel.sendMessage("**لقد تم فك الميوت عن شخص بنجاح**:white_check_mark:");
@@ -780,7 +780,7 @@ aa.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`**:earth_americas:  General Commends**\n-{prefix}**server - لعرض معلومات عن سيرفرك**\n-{prefix}**roll - القرعة**\n-{prefix}**ms7f - فتح المصحف**\n-{prefix}**invites - لرؤية دعواتك**\n-{prefix}**skin - رؤية سكنك بماين كرافت**\n-**avatar [user] - لعرض صورتك او صوره شخص**\n-**system-sar7 - لمعرفة نظام امر صراحة**\n-**tC - لانشاء رومات مؤقتة**\n-**user - معلومات عن حسابك**\n-**mb - معلومات عن الاعضاء**\n-**icon - لاظهار صورة سيرفرك**\n-**tr - لترجمة اي شي تقولة **\n-**cal - لتشغيل الألة الحاسبة**`)
+.setDescription(`**:earth_americas:  General Commends**\n-**server - لعرض معلومات عن سيرفرك**\n-**roll - القرعة**\n-**ms7f - فتح المصحف**\n-**invites - لرؤية دعواتك**\n-**skin - رؤية سكنك بماين كرافت**\n-**avatar [user] - لعرض صورتك او صوره شخص**\n-**system-sar7 - لمعرفة نظام امر صراحة**\n-**tC - لانشاء رومات مؤقتة**\n-**user - معلومات عن حسابك**\n-**mb - معلومات عن الاعضاء**\n-**icon - لاظهار صورة سيرفرك**\n-**tr - لترجمة اي شي تقولة **\n-**cal - لتشغيل الألة الحاسبة**`)
 
  .setTimestamp()
 	});
@@ -948,7 +948,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return message.reply(' ليس
                message.channel.send("تم قفل الرومات الكتابية :white_check_mark: ")
                });
              }
-if (message.content === "$umct") {
+if (message.content === "-umct") {
     if(!message.channel.guild) return message.reply(' This command only for servers');
 if(!message.member.hasPermission('MANAGE_MESSAGES')) return message.reply('ليس لديك صلاحيات');
            message.channel.overwritePermissions(message.guild.id, {
