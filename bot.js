@@ -780,7 +780,7 @@ aa.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
           .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`**:earth_americas:  General Commends**\n${prefix}**server - لعرض معلومات عن سيرفرك**\n-{prefix}**roll - القرعة**\n-{prefix}**ms7f - فتح المصحف**\n-{prefix}**invites - لرؤية دعواتك**\n-{prefix}**skin - رؤية سكنك بماين كرافت**\n-**avatar [user] - لعرض صورتك او صوره شخص**\n-**system-sar7 - لمعرفة نظام امر صراحة**\n-**tC - لانشاء رومات مؤقتة**\n-**user - معلومات عن حسابك**\n-**mb - معلومات عن الاعضاء**\n-**icon - لاظهار صورة سيرفرك**\n-**tr - لترجمة اي شي تقولة **\n-**cal - لتشغيل الألة الحاسبة**`)
+.setDescription(`**:earth_americas:  General Commends**\n-{prefix}**server - لعرض معلومات عن سيرفرك**\n-{prefix}**roll - القرعة**\n-{prefix}**ms7f - فتح المصحف**\n-{prefix}**invites - لرؤية دعواتك**\n-{prefix}**skin - رؤية سكنك بماين كرافت**\n-**avatar [user] - لعرض صورتك او صوره شخص**\n-**system-sar7 - لمعرفة نظام امر صراحة**\n-**tC - لانشاء رومات مؤقتة**\n-**user - معلومات عن حسابك**\n-**mb - معلومات عن الاعضاء**\n-**icon - لاظهار صورة سيرفرك**\n-**tr - لترجمة اي شي تقولة **\n-**cal - لتشغيل الألة الحاسبة**`)
 
  .setTimestamp()
 	});
@@ -794,7 +794,7 @@ mm.on("collect", r => {
  .setTitle(`Welcome To ${msg.guild.name}`)
            .setFooter(`- Requested By: ${msg.author.tag}`,msg.author.avatarURL)
   .setURL('http://bl3rbe.net/up/TdA8lZbl82.png')
-.setDescription(`** :wrench: Admins Commends** \n$**system-man3 - لمعرفة كيفيه تفعيل نظام منع التهكير لسيرفرك**\n${prefix}**mute - لعمل ميوت للعضو**\n${prefix}**unmute لفك الميوت عن  العضو**\n${prefix}**bc - الرساله الجماعيه**\n${prefix}**ban - أمر الباند**\n**$kick - أمر الكيك**\n${prefix}**cc [number] - لصنع رتب الوان باختيار عدد**\n${prefix}**dc - لحذف جميع رتب الالوان فقط**\n**$clear - لمسح الشات**\n$**role [mention] [rolename] - لاعطاء شخص رتبة**\n$**rerole [user] [rolename] - لازالة رتبة من شخص**\n$**move [user] - لنقل شخص من روم صوتي لرومك**\n$**move all - لنقل جميع المتواجدين بـ الرومات لرومك**\n$**mct - لقفل جميع الرومات الكتابية**\n$**umct - لفتح جميع الرومات الكتابية**\n$**mcv - لقفل جميع الرومات الصوتية**\n$**umcv - لفتح جميع الرومات الصوتية**`)
+.setDescription(`** :wrench: Admins Commends** \n-**system-man3 - لمعرفة كيفيه تفعيل نظام منع التهكير لسيرفرك**\n-{prefix}**mute - لعمل ميوت للعضو**\n-{prefix}**unmute لفك الميوت عن  العضو**\n-{prefix}**bc - الرساله الجماعيه**\n-{prefix}**ban - أمر الباند**\n**-kick - أمر الكيك**\n-{prefix}**cc [number] - لصنع رتب الوان باختيار عدد**\n-{prefix}**dc - لحذف جميع رتب الالوان فقط**\n**-clear - لمسح الشات**\n-**role [mention] [rolename] - لاعطاء شخص رتبة**\n-**rerole [user] [rolename] - لازالة رتبة من شخص**\n-**move [user] - لنقل شخص من روم صوتي لرومك**\n-**move all - لنقل جميع المتواجدين بـ الرومات لرومك**\n-**mct - لقفل جميع الرومات الكتابية**\n-**umct - لفتح جميع الرومات الكتابية**\n-**mcv - لقفل جميع الرومات الصوتية**\n-**umcv - لفتح جميع الرومات الصوتية**`)
 
 .setTimestamp()
 	});
